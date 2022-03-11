@@ -1,4 +1,83 @@
 .portfolio {
-  background-color: lightgreen;
+  background-color: rgba(168, 168, 168, 0.795);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.portfolio h1 {
+  position: absolute;
+  top: 60px;
+  font-size: 50px;
+}
+
+.portfolio .arrow {
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.portfolio .arrow.left {
+  left: 100px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.portfolio .arrow.right {
+  right: 100px;
+}
+
+.portfolio .slider {
+  height: 450px;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.portfolio .slider .container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .slider .container img {
+  width: 900px;
+  height: 550px;
+  background-color: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=portfolio.css.map */
