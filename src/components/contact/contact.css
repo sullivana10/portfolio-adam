@@ -1,4 +1,119 @@
 .contact {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .container {
+  height: 40%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: darkgray;
+  padding: 40px;
+  gap: 20px;
+}
+
+.contact .container .left {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .container .left h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contact .container .left p {
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.contact .container .right {
+  height: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .container .right form {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .container .right form input {
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px 5px;
   background-color: lightblue;
+  border: none;
+}
+
+.contact .container .right form input:focus {
+  outline: none;
+}
+
+.contact .container .right form textarea {
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+  background-color: lightblue;
+  border: none;
+}
+
+.contact .container .right form textarea:focus {
+  outline: none;
+}
+
+.contact .container .right form button {
+  width: 15%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=contact.css.map */
