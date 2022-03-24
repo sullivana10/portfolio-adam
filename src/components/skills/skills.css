@@ -1,5 +1,4 @@
 .skills {
-  background-color: darkslategray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,14 +15,53 @@
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .skills .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .skills .bottom {
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .skills .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .skills h1 {
   height: 25%;
   font-size: 60px;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +73,13 @@
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .skills h1 {
+    height: 20%;
+    margin-top: 20px;
+  }
+}
+
 .skills .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,14 +88,29 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .skills .icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
+  }
+}
+
 .skills .icons img {
   height: 100px;
   margin: 80px;
+}
+
+@media (max-width: 768px) {
+  .skills .icons img {
+    margin: 20px;
+  }
 }
 /*# sourceMappingURL=skills.css.map */

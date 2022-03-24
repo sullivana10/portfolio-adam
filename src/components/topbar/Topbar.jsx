@@ -1,7 +1,16 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 import "./topbar.scss";
 import { LocalPhone, Email } from "@material-ui/icons";
+import Switch from "@material-ui/core/Switch";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
+  const theme = useContext(ThemeContext);
+
+  const handleToggle = () => {
+    theme.dispatch({ type: "TOGGLE" });
+  };
+
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -19,6 +28,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
         </div>
         <div className="right">
+          <Switch className="switch" onChange={handleToggle} />
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>

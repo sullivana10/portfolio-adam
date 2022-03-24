@@ -1,8 +1,8 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: white;
-  color: #15023a;
+  background-color: rgba(0, 0, 0, 0.644);
+  color: white;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -23,6 +23,15 @@
           justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .topbar .wrapper {
+    padding: 0;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .topbar .wrapper .left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +49,12 @@
   margin-right: 40px;
 }
 
+@media (max-width: 768px) {
+  .topbar .wrapper .left .logo {
+    font-size: 25px;
+  }
+}
+
 .topbar .wrapper .left .itemContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +65,12 @@
   margin-left: 30px;
 }
 
+@media (max-width: 768px) {
+  .topbar .wrapper .left .itemContainer {
+    display: none;
+  }
+}
+
 .topbar .wrapper .left .itemContainer .icon {
   font-size: 18px;
   margin-right: 5px;
@@ -58,6 +79,19 @@
 .topbar .wrapper .left .itemContainer span {
   font-size: 15px;
   font-weight: 500;
+}
+
+.topbar .wrapper .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .wrapper .right .switch {
+  margin-right: 30px;
 }
 
 .topbar .wrapper .right .hamburger {
@@ -79,7 +113,7 @@
 .topbar .wrapper .right .hamburger span {
   width: 100%;
   height: 3px;
-  background-color: #15023a;
+  background-color: white;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: all 2s ease;

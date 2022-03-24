@@ -1,5 +1,7 @@
+@import "../../global.scss";
+
 .contact {
-  background-color: white;
+  //background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,15 +11,28 @@
     width: 60%;
     display: flex;
     align-items: flex-start;
-    background-color: darkgray;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
     padding: 40px;
     gap: 20px;
+
+    @include mobile {
+      height: 70vh;
+      width: 80vw;
+      padding: 20px;
+      flex-direction: column;
+      gap: 0;
+    }
 
     .left {
       height: 100%;
       flex: 1;
       display: flex;
       flex-direction: column;
+
+      @include mobile {
+        justify-content: space-evenly;
+      }
 
       h2 {
         font-size: 40px;
@@ -37,6 +52,10 @@
       align-items: center;
       justify-content: center;
 
+      @include mobile {
+        width: 100%;
+      }
+
       form {
         height: 100%;
         width: 100%;
@@ -47,7 +66,7 @@
           height: 30px;
           margin-bottom: 10px;
           padding: 5px 5px;
-          background-color: lightblue;
+          //background-color: lightblue;
           border: none;
 
           &:focus {
@@ -59,7 +78,7 @@
           height: 200px;
           margin-bottom: 10px;
           padding: 5px 5px;
-          background-color: lightblue;
+          //background-color: lightblue;
           border: none;
 
           &:focus {
@@ -74,6 +93,11 @@
           align-self: flex-end;
           justify-content: center;
           align-items: center;
+
+          @include mobile {
+            width: 20%;
+            height: 10%;
+          }
         }
       }
     }

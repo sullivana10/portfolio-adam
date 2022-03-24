@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 import emailjs from "emailjs-com";
 import "./contact.scss";
 
 export default function Contact() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -29,17 +34,48 @@ export default function Contact() {
         <div className="left">
           <h2>Contact Me</h2>
           <p>
-            Send me a message and I will get back to you as soon as i can.
+            Send me a message and I will get back to you as soon as I can.
             Thanks!
           </p>
         </div>
         <div className="right">
           <form onSubmit={sendEmail}>
-            <input type="text" placeholder="Name" name="name" required></input>
-            <input type="text" placeholder="Email" name="email" required />
-            <input type="text" placeholder="Subject" name="subject" required />
-            <textarea placeholder="Message" name="message" required></textarea>
-            <button type="submit">Send</button>
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Name"
+              name="name"
+              required
+            ></input>
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Email"
+              name="email"
+              required
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Subject"
+              name="subject"
+              required
+            />
+            <textarea
+              style={{ backgroundColor: darkMode && "#333" }}
+              placeholder="Message"
+              name="message"
+              required
+            ></textarea>
+            <button
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "white",
+              }}
+              type="submit"
+            >
+              Send
+            </button>
           </form>
         </div>
       </div>
