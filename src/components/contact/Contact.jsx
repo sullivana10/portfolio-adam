@@ -41,28 +41,40 @@ export default function Contact() {
         <div className="right">
           <form onSubmit={sendEmail}>
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "white",
+              }}
               type="text"
               placeholder="Name"
               name="name"
               required
             ></input>
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "white",
+              }}
               type="text"
               placeholder="Email"
               name="email"
               required
             />
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "white",
+              }}
               type="text"
               placeholder="Subject"
               name="subject"
               required
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "white",
+              }}
               placeholder="Message"
               name="message"
               required
