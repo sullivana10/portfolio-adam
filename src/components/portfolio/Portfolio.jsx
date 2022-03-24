@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../context";
 import "./portfolio.scss";
 import { portfolioData } from "../../data.js";
 
 export default function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = portfolioData;
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const handleClick = (way) => {
     way === "left"
@@ -31,12 +34,14 @@ export default function Portfolio() {
         src="assets/arrow.png"
         className="arrow left"
         alt=""
+        style={{ filter: !darkMode && "invert(100%)" }}
         onClick={() => handleClick("left")}
       />
       <img
         src="assets/arrow.png"
         className="arrow right"
         alt=""
+        style={{ filter: !darkMode && "invert(100%)" }}
         onClick={() => handleClick()}
       />
     </div>
