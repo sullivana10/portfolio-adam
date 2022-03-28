@@ -1,7 +1,7 @@
 import "./skills.scss";
 import HTML from "../../icons/HTML.svg";
 import js from "../../icons/js.svg";
-import bootstrap from "../../icons/bootstrap.svg";
+import css from "../../icons/css.svg";
 import sass from "../../icons/sass.svg";
 import react from "../../icons/react.svg";
 import git from "../../icons/git.svg";
@@ -14,13 +14,13 @@ export default function Skills() {
         <div className="top">
           <img src={js} alt="" />
           <img src={HTML} alt="" />
-          <img src={react} alt="" />
+          <img src={css} alt="" />
         </div>
 
         <div className="bottom">
+          <img src={react} alt="" />
           <img src={sass} alt="" />
           <img src={git} alt="" />
-          <img height={50} src={bootstrap} alt="" />
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import "./intro.scss";
 export default function Intro() {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro" id="intro">
       <div className="left">
