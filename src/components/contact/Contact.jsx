@@ -41,6 +41,7 @@ export default function Contact() {
         <div className="right">
           <form onSubmit={sendEmail}>
             <input
+              className="name"
               style={{
                 backgroundColor: darkMode && "#333",
                 color: darkMode && "white",
@@ -51,6 +52,7 @@ export default function Contact() {
               required
             ></input>
             <input
+              className="email"
               style={{
                 backgroundColor: darkMode && "#333",
                 color: darkMode && "white",
@@ -61,6 +63,7 @@ export default function Contact() {
               required
             />
             <input
+              className="subject"
               style={{
                 backgroundColor: darkMode && "#333",
                 color: darkMode && "white",
@@ -71,6 +74,7 @@ export default function Contact() {
               required
             />
             <textarea
+              className="message"
               style={{
                 backgroundColor: darkMode && "#333",
                 color: darkMode && "white",

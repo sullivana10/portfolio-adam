@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
 import "./topbar.scss";
-import { LocalPhone, Email } from "@material-ui/icons";
+import { LocalPhone, Email, GitHub } from "@material-ui/icons";
 import Switch from "@material-ui/core/Switch";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -25,6 +25,16 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <Email className="icon" />
             <span>AdamSullivanDev@gmail.com</span>
+          </div>
+          <div className="itemContainer">
+            <GitHub className="icon" />
+            <a
+              href="https://github.com/sullivana10"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/sullivana10
+            </a>
           </div>
         </div>
         <div className="right">

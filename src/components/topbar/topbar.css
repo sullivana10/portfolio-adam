@@ -65,6 +65,11 @@
   margin-left: 30px;
 }
 
+.topbar .wrapper .left .itemContainer a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 768px) {
   .topbar .wrapper .left .itemContainer {
     display: none;
